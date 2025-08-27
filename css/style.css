@@ -1167,8 +1167,8 @@ footer {
     }
     
     .nav-btn {
-        font-size: 14px; /* Reduzindo o tamanho da fonte */
-        padding: 6px 12px; /* Reduzindo o padding */
+        font-size: 12px;
+        padding: 5px 10px;
         gap: 6px; /* Reduzindo o espaçamento entre ícone e texto */
     }
     
@@ -1192,13 +1192,13 @@ footer {
     /* Reduzindo tamanho das imagens mira_pt.png e mira_en.png */
     img[src*="mira_pt.png"], 
     img[src*="mira_en.png"] {
-        max-width: 30px;
+        max-width: 200px;
         height: auto;
     }
     
     /* Caso as imagens estejam como background de algum elemento */
     .mira-pt, .mira-en {
-        background-size: 30px auto;
+        background-size: 200px auto;
     }
 }
 
