@@ -1230,3 +1230,101 @@ footer {
         background-size: 24px auto;
     }
 }
+/* ============================================= */
+/* ALTERAÇÕES PARA TAMANHO DAS IMAGENS E SCROLL  */
+/* ============================================= */
+
+/* Ajuste geral para as imagens mira em todos os tamanhos de tela */
+img[src*="mira_pt.png"], 
+img[src*="mira_en.png"] {
+    max-width: 70px;
+    height: auto;
+    margin: 0 5px;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Aumentando o tamanho das imagens mira para dispositivos móveis */
+    img[src*="mira_pt.png"], 
+    img[src*="mira_en.png"] {
+        max-width: 60px;
+        height: auto;
+        margin: 0 3px;
+    }
+    
+    /* Ajustando o seletor de idioma para acomodar as imagens maiores */
+    .language-btn {
+        padding: 10px 15px;
+        min-width: 70px;
+    }
+    
+    /* Adicionando espaçamento para evitar que o header cubra o conteúdo ao rolar */
+    .section-card {
+        scroll-margin-top: 80px; /* Espaço para o header fixo */
+    }
+    
+    /* Garantindo que os títulos não sejam cortados */
+    .section-title {
+        scroll-margin-top: 90px; /* Espaço extra para os títulos */
+    }
+    
+    /* Ajuste para o hero section */
+    .hero-section {
+        scroll-margin-top: 70px;
+    }
+}
+
+/* Dispositivos muito pequenos (até 480px) */
+@media (max-width: 480px) {
+    /* Mantendo um bom tamanho das imagens mesmo em telas pequenas */
+    img[src*="mira_pt.png"], 
+    img[src*="mira_en.png"] {
+        max-width: 50px;
+        height: auto;
+        margin: 0 2px;
+    }
+    
+    .language-btn {
+        padding: 8px 12px;
+        min-width: 60px;
+    }
+    
+    /* Aumentando o espaçamento para telas muito pequenas */
+    .section-card {
+        scroll-margin-top: 90px;
+    }
+    
+    .section-title {
+        scroll-margin-top: 100px;
+    }
+}
+
+/* Para tablets e desktops */
+@media (min-width: 769px) {
+    /* Garantindo um bom tamanho das imagens em telas maiores */
+    img[src*="mira_pt.png"], 
+    img[src*="mira_en.png"] {
+        max-width: 70px;
+        height: auto;
+        margin: 0 5px;
+    }
+    
+    /* Ajuste para o scroll em telas maiores */
+    .section-card {
+        scroll-margin-top: 80px;
+    }
+    
+    .section-title {
+        scroll-margin-top: 90px;
+    }
+}
+
+/* Correção adicional para links âncora e navegação */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Garantindo que todos os elementos com ID tenham espaçamento adequado */
+[id] {
+    scroll-margin-top: 80px;
+}
