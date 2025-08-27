@@ -1147,3 +1147,86 @@ footer {
         grid-template-columns: repeat(2, 1fr); /* Duas colunas em tablets */
     }
 }
+
+/* ============================================= */
+/* ADICIONE ESTAS NOVAS REGRAS A PARTIR DAQUI    */
+/* ============================================= */
+
+/* Dispositivos móveis (até 768px) */
+@media (max-width: 768px) {
+    /* Reduzindo o tamanho do menu de navegação */
+    .header-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px; /* Reduzindo o espaçamento entre itens */
+    }
+    
+    .nav-btn {
+        font-size: 14px; /* Reduzindo o tamanho da fonte */
+        padding: 6px 12px; /* Reduzindo o padding */
+        gap: 6px; /* Reduzindo o espaçamento entre ícone e texto */
+    }
+    
+    .icon {
+        width: 24px; /* Reduzindo o tamanho dos ícones */
+        height: 24px;
+    }
+    
+    /* Ajustando o seletor de idioma */
+    .language-selector {
+        gap: 5px;
+        margin-left: 0;
+    }
+    
+    .language-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+        min-width: 45px;
+    }
+    
+    /* Reduzindo tamanho das imagens mira_pt.png e mira_en.png */
+    img[src*="mira_pt.png"], 
+    img[src*="mira_en.png"] {
+        max-width: 30px;
+        height: auto;
+    }
+    
+    /* Caso as imagens estejam como background de algum elemento */
+    .mira-pt, .mira-en {
+        background-size: 30px auto;
+    }
+}
+
+/* Dispositivos muito pequenos (até 480px) */
+@media (max-width: 480px) {
+    .nav-btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .language-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        min-width: 40px;
+    }
+    
+    /* Reduzindo ainda mais as imagens mira */
+    img[src*="mira_pt.png"], 
+    img[src*="mira_en.png"] {
+        max-width: 24px;
+    }
+    
+    .mira-pt, .mira-en {
+        background-size: 24px auto;
+    }
+}
