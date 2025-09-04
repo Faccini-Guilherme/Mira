@@ -1,12 +1,12 @@
 :root {
 /* Paleta de cores*/
---primary-color: #39a098; /* Azul-esverdeado */
---primary-dark: #8ae0db; /* Azul-esverdeado mais claro */
---primary-light: #b8f0ed; /* Azul muito claro */
---secondary-color: #e2be99; /* Bege/creme */
+--primary-color: #39a098; 
+--primary-dark: #8ae0db; 
+--primary-light: #b8f0ed; 
+--secondary-color: #e2be99; 
 --ico: #b12a1a;
---secondary-light: #f1dec3; /* Bege mais claro */
---secondary-dark: #d4a877; /* Bege mais escuro (derivado) */
+--secondary-light: #f1dec3; 
+--secondary-dark: #d4a877; 
 
 /* Cores de texto e fundo */
 --accent-color: #5dc1b9;
@@ -242,7 +242,7 @@ color: var(--body-text-color);
 line-height: var(--body-line-height);
 margin-bottom: 1.5rem; /* espaçamento entre parágrafos */
 }
-/* Classe específica para o bloco de texto que precisa de mais espaçamento */
+
 .texto-com-margem {
 margin: 30px 0;
 padding: 0 20px;
@@ -483,7 +483,7 @@ padding: 20px 15px;
 width: 100%;
 }
 }
-/* Estilos da Simulação - Adaptados para o MIRA */
+/* Estilos da Simulação  */
 .simulation-container {
 display: flex;
 flex-direction: column;
@@ -1167,8 +1167,136 @@ max-width: 200px;
 height: auto;
 }
 
-/* Caso as imagens estejam como background de algum elemento */
 .mira-pt, .mira-en {
 background-size: 200px auto;
 }
+}
+
+/* Dispositivos muito pequenos (até 320px) */
+@media (max-width: 320px) {
+  /* Ajustes gerais */
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+  
+  /* Cabeçalho */
+  .header-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .logo-img {
+    height: 40px;
+  }
+  
+  /* Navegação */
+  nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .nav-btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Seletor de idioma */
+  .language-selector {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+  
+  .language-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 40px;
+  }
+  
+  /* Conteúdo principal */
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero-image {
+    max-width: 250px;
+  }
+  
+  .section-card {
+    padding: 15px;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  /* Formulários */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .form-actions .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  /* Simulação */
+  .simulation-container {
+    padding: 15px 10px;
+    min-height: 350px;
+  }
+  
+  .logo-sim h1 {
+    font-size: 1.8rem;
+  }
+  
+  .intro-content p {
+    font-size: 0.9rem;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+  
+  .card-content img {
+    height: 200px;
+  }
+  
+  .btn-action {
+    width: 100px;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+  
+  /* Resultados */
+  .score-card {
+    min-width: 120px;
+    padding: 15px;
+  }
+  
+  .score-value {
+    font-size: 2rem;
+  }
+  
+  /* Rodapé */
+  footer {
+    padding: 20px 0;
+  }
 }
