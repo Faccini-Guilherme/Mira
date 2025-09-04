@@ -25,7 +25,7 @@ function changeLanguage(lang) {
         document.title = 'MIRA - Cybersecurity Platform';
     }
     
-    // Alterar a imagem do herói com base no idioma
+    // Alterar a imagem com base no idioma
     const heroImage = document.querySelector('.hero-image');
     if (heroImage) {
         if (lang === 'en') {
