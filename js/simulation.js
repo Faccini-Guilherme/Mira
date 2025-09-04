@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return localStorage.getItem('preferredLanguage') || 'pt';
     };
     
-    // Função para determinar se um post é inseguro - ATUALIZADA
+    // Função para determinar se um post é inseguro
     function isUnsafePost(post) {
         // Lista de IDs de posts inseguros
         const unsafePostIds = [
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         let exposurePercentage = Math.round((exposureScoreForResult / MAX_POSTS) * 200);
         if (exposurePercentage === 0) {
-            exposurePercentage = 10; // Garante que a barra seja visível quando 0
+            exposurePercentage = 10; // Barra seja visível quando 0
         }
         
         gaugeFill.style.width = `${exposurePercentage}%`;
