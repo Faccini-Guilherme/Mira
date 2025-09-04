@@ -1,7 +1,7 @@
 // Posts do jogo em português
 const gamePostsPT = [
     {
-        id: "vacation", // Identificador único
+        id: "vacation", 
         type: "foto",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/1049298/pexels-photo-1049298.jpeg" alt="Foto de férias">`,
@@ -11,7 +11,7 @@ const gamePostsPT = [
         safeChoice: "protege"
     },
     {
-        id: "gym", // Identificador único
+        id: "gym", 
         type: "localização",
         icon: "fas fa-map-marker-alt",
         content: `<div class="location">
@@ -28,7 +28,7 @@ const gamePostsPT = [
         safeChoice: "protege"
     },
     {
-        id: "birthday", // Identificador único
+        id: "birthday", 
         type: "texto",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -41,7 +41,7 @@ const gamePostsPT = [
         safeChoice: "protege"
     },
     {
-        id: "house", // Identificador único
+        id: "house", 
         type: "foto",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg" alt="Foto da casa">`,
@@ -51,7 +51,7 @@ const gamePostsPT = [
         safeChoice: "protege"
     },
     {
-        id: "son", // Identificador único
+        id: "son", 
         type: "texto",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -64,7 +64,7 @@ const gamePostsPT = [
         safeChoice: "protege"
     },
     {
-        id: "boss", // Identificador único
+        id: "boss", 
         type: "foto",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/4968681/pexels-photo-4968681.jpeg" alt="Foto de cartão">`,
@@ -74,7 +74,7 @@ const gamePostsPT = [
         safeChoice: "protege"
     },
     {
-        id: "sunset", // Identificador único
+        id: "sunset",
         type: "texto",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -87,7 +87,7 @@ const gamePostsPT = [
         safeChoice: "posta"
     },
     {
-        id: "course", // Identificador único
+        id: "course", 
         type: "foto",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/8093039/pexels-photo-8093039.jpeg" alt="Conclusão de curso">`,
@@ -97,7 +97,7 @@ const gamePostsPT = [
         safeChoice: "posta"
     },
     {
-        id: "coffee", // Identificador único
+        id: "coffee", 
         type: "texto",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -110,7 +110,7 @@ const gamePostsPT = [
         safeChoice: "posta"
     },
     {
-        id: "festival", // Identificador único
+        id: "festival", 
         type: "foto",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/29393022/pexels-photo-29393022.jpeg" alt="Festival de tecnologia">`,
@@ -120,7 +120,7 @@ const gamePostsPT = [
         safeChoice: "posta"
     },
     {
-        id: "cat", // Identificador único
+        id: "cat", 
         type: "foto",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg" alt="Foto de gato">`,
@@ -130,7 +130,7 @@ const gamePostsPT = [
         safeChoice: "posta"
     },
     {
-        id: "knowledge", // Identificador único
+        id: "knowledge", 
         type: "texto",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -147,7 +147,7 @@ const gamePostsPT = [
 // Posts do jogo em inglês
 const gamePostsEN = [
     {
-        id: "vacation", // Mesmo identificador
+        id: "vacation", 
         type: "photo",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/1049298/pexels-photo-1049298.jpeg" alt="Vacation photo">`,
@@ -157,7 +157,7 @@ const gamePostsEN = [
         safeChoice: "protege"
     },
     {
-        id: "gym", // Mesmo identificador
+        id: "gym", 
         type: "location",
         icon: "fas fa-map-marker-alt",
         content: `<div class="location">
@@ -174,7 +174,7 @@ const gamePostsEN = [
         safeChoice: "protege"
     },
     {
-        id: "birthday", // Mesmo identificador
+        id: "birthday", 
         type: "text",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -187,7 +187,7 @@ const gamePostsEN = [
         safeChoice: "protege"
     },
     {
-        id: "house", // Mesmo identificador
+        id: "house", 
         type: "photo",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg" alt="House photo">`,
@@ -197,7 +197,7 @@ const gamePostsEN = [
         safeChoice: "protege"
     },
     {
-        id: "son", // Mesmo identificador
+        id: "son", 
         type: "text",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -210,7 +210,7 @@ const gamePostsEN = [
         safeChoice: "protege"
     },
     {
-        id: "boss", // Mesmo identificador
+        id: "boss", 
         type: "photo",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/4968681/pexels-photo-4968681.jpeg" alt="Card photo">`,
@@ -220,7 +220,7 @@ const gamePostsEN = [
         safeChoice: "protege"
     },
     {
-        id: "sunset", // Mesmo identificador
+        id: "sunset", 
         type: "text",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -233,7 +233,7 @@ const gamePostsEN = [
         safeChoice: "posta"
     },
     {
-        id: "course", // Mesmo identificador
+        id: "course", 
         type: "photo",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/8093039/pexels-photo-8093039.jpeg" alt="Course completion">`,
@@ -243,7 +243,7 @@ const gamePostsEN = [
         safeChoice: "posta"
     },
     {
-        id: "coffee", // Mesmo identificador
+        id: "coffee", 
         type: "text",
         icon: "fas fa-font",
         content: `<div class="post-text">
@@ -256,7 +256,7 @@ const gamePostsEN = [
         safeChoice: "posta"
     },
     {
-        id: "festival", // Mesmo identificador
+        id: "festival", 
         type: "photo",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/29393022/pexels-photo-29393022.jpeg" alt="Technology festival">`,
@@ -266,7 +266,7 @@ const gamePostsEN = [
         safeChoice: "posta"
     },
     {
-        id: "cat", // Mesmo identificador
+        id: "cat", 
         type: "photo",
         icon: "fas fa-image",
         content: `<img src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg" alt="Cat photo">`,
@@ -276,7 +276,7 @@ const gamePostsEN = [
         safeChoice: "posta"
     },
     {
-        id: "knowledge", // Mesmo identificador
+        id: "knowledge", 
         type: "text",
         icon: "fas fa-font",
         content: `<div class="post-text">
